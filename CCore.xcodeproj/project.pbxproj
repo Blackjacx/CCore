@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B939EE7B224EFCAA0049001E /* ccore.h in Headers */ = {isa = PBXBuildFile; fileRef = B939EE79224EFCAA0049001E /* ccore.h */; };
-		B939EE7C224EFCAA0049001E /* ccore.c in Sources */ = {isa = PBXBuildFile; fileRef = B939EE7A224EFCAA0049001E /* ccore.c */; };
+		B90B3037224FA43F0043D877 /* CCore.h in Headers */ = {isa = PBXBuildFile; fileRef = B90B3035224FA43F0043D877 /* CCore.h */; };
+		B90B3038224FA43F0043D877 /* CCore.c in Sources */ = {isa = PBXBuildFile; fileRef = B90B3036224FA43F0043D877 /* CCore.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B90B3035224FA43F0043D877 /* CCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCore.h; sourceTree = "<group>"; };
+		B90B3036224FA43F0043D877 /* CCore.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CCore.c; sourceTree = "<group>"; };
 		B939EE72224EFC750049001E /* libCCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B939EE79224EFCAA0049001E /* ccore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ccore.h; sourceTree = "<group>"; };
-		B939EE7A224EFCAA0049001E /* ccore.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ccore.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,11 +28,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B90B301C224F94020043D877 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B90B3036224FA43F0043D877 /* CCore.c */,
+				B90B3035224FA43F0043D877 /* CCore.h */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		B939EE69224EFC750049001E = {
 			isa = PBXGroup;
 			children = (
-				B939EE79224EFCAA0049001E /* ccore.h */,
-				B939EE7A224EFCAA0049001E /* ccore.c */,
+				B90B301C224F94020043D877 /* Sources */,
 				B939EE73224EFC750049001E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,7 +60,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B939EE7B224EFCAA0049001E /* ccore.h in Headers */,
+				B90B3037224FA43F0043D877 /* CCore.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,7 +120,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B939EE7C224EFCAA0049001E /* ccore.c in Sources */,
+				B90B3038224FA43F0043D877 /* CCore.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +178,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ./Sources/CCore/include/;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -223,6 +232,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ./Sources/CCore/include/;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
